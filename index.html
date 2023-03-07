@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO - Karma</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  
+  <div class="navBar">
+
+    <i class="menu-icon fa-solid fa-bars-staggered" id="menu-icon"
+      onclick="toggleMenuIcon()"></i>
+
+    <a class="navLogo" href="#"><img src="./Images/logo.png" alt="Logo"></a>
+
+    <ul class="menu" id="menu">
+      <li onmouseenter="mouseOverHome()" onmouseleave="mouseLeaveHome()" class="menuListItem">
+        <a class="menuLinks" href="#">Home <i class="fa fa-caret-down"></i></a> <!-- Home -->
+        <div class="homeSubmenuDivContainer">
+          <div class="homeSubmenuDiv1">
+            <div class="homeSubmenuDiv1Title">Menu I</div>
+            <ul class="homeSubmenuDiv1Submenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Landing</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Main</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Business</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Life Coach</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Corporate</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home SAAS</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Business</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Finance</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Life Coach</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home IT Startup</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Shop</a></li>
+            </ul>
+          </div>
+          <div class="homeSubmenuDiv2">
+            <div class="homeSubmenuDiv2Title">Menu II</div>
+            <ul class="homeSubmenuDiv2Submenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Digital Agency</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home SAAS</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Digital Agency</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Corporate</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Business</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Coworking</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Creative Portfolio</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Software Agency</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Tattoo</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Marketing</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Construction</a></li>
+            </ul>
+          </div>
+          <div class="homeSubmenuDiv3">
+            <div class="homeSubmenuDiv3Title">Menu III</div>
+            <ul class="homeSubmenuDiv3Submenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Dark Portfolio</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Summer Camp</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Business</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Creative Portfolio</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Logistics</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Construction</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Architecture</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Consulting</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Business</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Nail Bar</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Gardening</a></li>
+            </ul>
+          </div>
+          <div class="homeSubmenuDiv4">
+            <div class="homeSubmenuDiv4Title">Menu IV</div>
+            <ul class="homeSubmenuDiv4Submenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Organic Soap</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Medical</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Metro Portfolio</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Illustrated Portfolio</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Spa Salon</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Real Estate</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home SEO</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Minimal Design</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Digital Marketing</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Email Marketing</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Home Marketing SAAS</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li onmouseenter="mouseOverPages()" onmouseleave="mouseLeavePages()" class="menuListItem">
+        <a class="menuLinks" href="#">Pages <i class="fa fa-caret-down"></i></a> <!-- Pages -->
+        <ul class="pagesSubmenu">
+          <li onmouseenter="mouseOverAboutUs()" onmouseleave="mouseLeaveAboutUs()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">About Us <i class="fa fa-caret-down"></i></a>
+            <ul class="aboutUsSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">About Classic</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">About Simple</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">About Modern</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">About Advanced</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">About Common</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverServices()" onmouseleave="mouseLeaveServices()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Services <i class="fa fa-caret-down"></i></a>
+            <ul class="servicesSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="">Service Classic</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="">Service Simple</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="">Service Modern</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="">Service Advanced</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="">Service Details</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="">Service Details 2</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="">Service Details 3</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="">Service Details 4</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverPricing()" onmouseleave="mouseLeavePricing()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Pricing <i class="fa fa-caret-down"></i></a>
+            <ul class="pricingSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Pricing Classic</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Pricing Simple</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Pricing Modern</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Pricing Advanced</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverTeam()" onmouseleave="mouseLeaveTeam()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Team <i class="fa fa-caret-down"></i></a>
+            <ul class="teamSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Team</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Leadership</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverMission()" onmouseleave="mouseLeaveMission()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Mission <i class="fa fa-caret-down"></i></a>
+            <ul class="missionSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Our Mission Classic</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Our Mission Simple</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverAwards()" onmouseleave="mouseLeaveAwards()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Awards <i class="fa fa-caret-down"></i></a>
+            <ul class="awardsSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Awards Classic</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Awards Simple</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Awards Modern</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverWhyChooseUs()" onmouseleave="mouseLeaveWhyChooseUs()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Why choose us <i class="fa fa-caret-down"></i></a>
+            <ul class="whyChooseUsSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Why Choose Us Classic</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Why Choose Us Simple</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverComingSoon()" onmouseleave="mouseLeaveComingSoon()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Coming soon <i class="fa fa-caret-down"></i></a>
+            <ul class="comingSoonSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Coming Soon Classic</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Coming Soon Simple</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Coming Soon Modern</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverTestimonials()" onmouseleave="mouseLeaveTestimonials()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Testimonials <i class="fa fa-caret-down"></i></a>
+            <ul class="testimonialsSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Testimonials simple</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Testimonials classic</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOver404()" onmouseleave="mouseLeave404()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">404 <i class="fa fa-caret-down"></i></a>
+            <ul class="fourOfourSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">404 Classic</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">404 Simple</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverFAQ()" onmouseleave="mouseLeaveFAQ()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">F.A.Q. <i class="fa fa-caret-down"></i></a>
+            <ul class="faqSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">F.A.Q. Classic</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">F.A.Q. Simple</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverOther()" onmouseleave="mouseLeaveOther()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Other <i class="fa fa-caret-down"></i></a>
+            <ul class="otherSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Author Bio</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Get a Quote</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Book an Appointment</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Careers</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Magazines</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Our Partners</a></li>
+            </ul>
+          </li>
+        </ul>
+      <li onmouseenter="mouseOverProjects()" onmouseleave="mouseLeaveProjects()" class="menuListItem">
+        <a class="menuLinks" href="#">Projects <i class="fa fa-caret-down"></i></a> <!-- Projects -->
+        <ul class="projectsSubmenu">
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio List Metro</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio List Masonry</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio List Grid</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio List Mosaic</a></li>
+          <li onmouseenter="mouseOverPortfolioDetails()" onmouseleave="mouseLeavePortfolioDetails()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Portfolio Details <i class="fa fa-caret-down"></i></a>
+            <ul class="portfolioDetailsSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio Default</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio Modern</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio Creative</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio Simple</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio with Slider</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio Unique</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Portfolio Classic</a></li>
+            </ul>
+          </li>
+          <li onmouseenter="mouseOverCaseStudies()" onmouseleave="mouseLeaveCaseStudies()" class="subMenuListItem">
+            <a class="SubmenuLinks" href="#">Case Studies <i class="fa fa-caret-down"></i></a>
+            <ul class="caseStudiesSubmenu">
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Case Studies Classic</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Case Studies Simple</a></li>
+              <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Case Studies Detail</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li onmouseenter="mouseOverBlog()" onmouseleave="mouseLeaveBlog()" class="menuListItem">
+        <a class="menuLinks" href="#">Blog <i class="fa fa-caret-down"></i></a> <!-- Blog -->
+        <ul class="blogSubmenu">
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Blog Centered</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Blog Grid</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Blog Metro</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Blog Classic</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Post Details</a></li>
+        </ul>
+      </li>
+      <li onmouseenter="mouseOverContact()" onmouseleave="mouseLeaveContact()" class="menuListItem">
+        <a class="menuLinks" href="#">Contact <i class="fa fa-caret-down"></i></a> <!-- Contact -->
+        <ul class="contactSubmenu">
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Contact Multi Locations</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Contact Simple</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Contact Sidebar</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Contact Modern</a></li>
+          <li class="subMenuListItem"><a class="SubmenuLinks" href="#">Location</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <a class="getStarted" href="#">Get Started</a>
+
+  </div> <!-- End of navBar -->
+
+  <div class="home">
+
+    <div class="left">
+      <h1 class="leftH1">Powering the digital business simply</h1>
+      <p class="leftP1">We provide you with user management functionality that results in 
+        faster development, faster revenue, more users.</p>
+      <a class="homeGetStarted" href="#">Get Started</a>
+      <p class="leftP2">Companies that trust us.</p>
+      <div class="homeImages">
+        <img class="leftImg1" src="./Images/home2.png" alt="home2">
+        <img class="leftImg2" src="./Images/home3.png" alt="home2">
+        <img class="leftImg3" src="./Images/home4.png" alt="home3">
+      </div>
+    </div>
+
+    <div class="right">
+      <img class="rightImg" src="./Images/home1.png" alt="home1">
+    </div>
+
+  </div> <!-- End of home -->
+
+  <div class="secondSection">
+
+    <h2 class="secondSectionH2">Keywords research. Content optimisation. Backlinks. Store monitoring.</h2>
+    
+    <div class="secondSectionFlex">
+
+      <div class="secondSectionItem1">
+        <div class="secondSectionItem1ImgDiv">
+          <img src="./Images/2ndSection/img1.png" alt="img1">
+        </div>
+        <h5 class="secondSectionItem1h5">Get Quality Leads</h5>
+        <p class="secondSectionItem1P">Nam libero tempore, cum soluta nobis est eligendi optio cumque
+           nihil impedit quo minus id quod maxime.</p>
+      </div>
+
+      <div class="secondSectionItem2">
+        <div class="secondSectionItem2ImgDiv">
+          <img src="./Images/2ndSection/img2.png" alt="img2">
+        </div>
+        <h5 class="secondSectionItem2h5">Grow Your Traffic</h5>
+        <p class="secondSectionItem2P">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+          et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+
+      <div class="secondSectionItem3">
+        <div class="secondSectionItem3ImgDiv">
+          <img src="./Images/2ndSection/img3.png" alt="img3">
+        </div>
+        <h5 class="secondSectionItem3h5">Drive More Sales</h5>
+        <p class="secondSectionItem3P">Eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+          beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+      </div>
+
+    </div>
+
+  </div> <!-- End of secondSection -->
+
+  <div class="thirdSection">
+
+    <div class="thirdSectionLeft">
+      <img class="thirdSectionLeftImg1" src="./Images/3rdSection/img1.png" alt="img1">
+      <img class="thirdSectionLeftImg2" src="./Images/3rdSection/img2.png" alt="img2">
+      <img class="thirdSectionLeftImg3" src="./Images/3rdSection/img3.png" alt="img3">
+    </div>
+
+    <div class="thirdSectionRight">
+
+      <h3 class="thirdSectionRightH3">Small detail, big impact</h3>
+
+      <p class="thirdSectionRightP">Sed ut perspiciatis unde omnis iste natus error 
+        sit voluptatem accusantium doloremque laudantium, 
+        totam rem aperiam, eaque ipsa quae ab illo inventore 
+        veritatis et quasi architecto beatae vitae dicta sunt
+         explicabo. Nemo enim ipsam voluptatem.</p>
+
+      <a class="thirdSectionRightA" href="#">Learn more</a>
+
+    </div>
+
+  </div> <!-- End of thirdSection -->
+
+  <div class="fourthSection">
+
+    <div class="fourthSectionLeft">
+      <h3 class="fourthSectionLeftH3">
+        Rank your website
+      </h3>
+      <p class="fourthSectionLeftP">
+        Nam libero tempore, cum soluta nobis est eligendi optio 
+        cumque nihil impedit quo minus id quod maxime placeat 
+        facere possimus, omnis voluptas assumenda est, omnis dolor
+         repellendus temoporibus autem.
+      </p>
+      <a class="fourthSectionLeftA" href="#">
+        Learn more
+      </a>
+    </div>
+
+    <div class="fourthSectionRight">
+      <img class="fourthSectionRightImg1" src="./Images/4thSection/img1.png" alt="img">
+      <img class="fourthSectionRightImg2" src="./Images/4thSection/img2.png" alt="img2">
+      <img class="fourthSectionRightImg3" src="./Images/4thSection/img3.png" alt="img3">
+    </div>
+
+  </div> <!-- End of fourthSection -->
+
+  <div class="fifthSection">
+    <div class="fifthSectionFirst">
+      <h2 class="fifthSectionFirstH2">Choose Your Plan</h2>
+      <p class="fifthSectionFirstP">Neque porro quisquam est, qui 
+        dolorem ipsum quia sed ut perspiciatis. Nam libero tempore,
+         cum soluta nobis est eligendi optio cumque.</p>
+      <a class="fifthSectionFirstA" href="#">Click for more</a>
+    </div>
+    <div class="fifthSectionSecond">
+      <h4 class="fifthSectionSecondH4">Starter Plan</h4>
+      <h2 class="fifthSectionSecondH2">$10/month</h2>
+      <p class="fifthSectionSecondP1">
+        <i class="fa-solid fa-circle-check font-awesome-circle-check" ></i>
+        14-day money back gyarantee</p>
+      <p class="fifthSectionSecondP2">Own Analytics Platform</p>
+      <p class="fifthSectionSecondP3">SEO Audit</p>
+      <p class="fifthSectionSecondP4">SEO Optimisation</p>
+      <p class="fifthSectionSecondP5">24/7 Support</p>
+      <a class="fifthSectionSecondA" href="#">Buy Plan</a>
+    </div>
+    <div class="fifthSectionThird">
+      <h4 class="fifthSectionThirdH4">Premium Plan</h4>
+      <h2 class="fifthSectionThirdH2">$30/month</h2>
+      <p class="fifthSectionThirdP1">
+        <i class="fa-solid fa-circle-check font-awesome-circle-check" ></i>
+        14-day money back guarantee</p>
+      <p class="fifthSectionThirdP2">Own Analytics Platform</p>
+      <p class="fifthSectionThirdP3">SEO Audit</p>
+      <p class="fifthSectionThirdP4">SEO Optimisation</p>
+      <p class="fifthSectionThirdP5">Speed Optimisation</p>
+      <p class="fifthSectionThirdP6">24/7 Support</p>
+      <a class="fifthSectionThirdA" href="#">Buy Plan</a>
+    </div>
+  </div> <!-- End of fifthSection -->
+
+  <div class="sixthSection">
+    <h2 class="sixthSectionH2">We take care of your business</h2>
+    <p class="sixthSectionP">Nam libero tempore, cum soluta nobis est
+       eligendi optio cumque nihil impedit quo minus id quod maxime 
+       placeat facere possimus, omnis voluptas assumenda est, omnis 
+       dolor repellendus temporibus autem.</p>
+    <div class="sixthSectionFlex">
+      <div class="sixthSectionFlex1">
+        <img class="sixthSectionFlex1Img" src="./Images/6thSection/img1.png" alt="img1">
+      </div>
+      <div class="sixthSectionFlex2">
+        <h2 class="sixthSectionFlex2H2-1">
+          <i class="fa-solid fa-check" id="font-awesome-check"></i>
+          For entrepreneurs
+        </h2>
+        <p class="sixthSectionFlex2P1">
+          Totam rem aperiam, eaque ipsa quae ab illo inventore 
+          veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </p>
+        <h2 class="sixthSectionFlex2H2-2">
+          <i class="fa-solid fa-check" id="font-awesome-check"></i>
+          For startups
+        </h2>
+        <p class="sixthSectionFlex2P2">
+          Eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+          beatae vitae dicta sunt explicabo. Nemo enim ipsam.
+        </p>
+        <h2 class="sixthSectionFlex2H2-3">
+          <i class="fa-solid fa-check" id="font-awesome-check"></i>
+          For employees
+        </h2>
+        <p class="sixthSectionFlex2P3">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+          accusantium doloremque laudantium, totam.
+        </p>
+      </div>
+    </div>
+  </div> <!-- End of sixthSection -->
+
+  <div class="seventhSection">
+    <h2 class="seventhSectionH2">
+      Find out what we can do for you
+    </h2>
+    <p class="seventhSectionP">
+      Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil 
+      impedit quo minus id quod maxime placeat facere possimus, omnis 
+      voluptas assumenda est.
+    </p>
+    <a href="#" class="seventhSectionA">Get Started</a>
+  </div> <!-- End of seventhSection -->
+
+  <div class="footer">
+    <div class="footer1">
+      <div class="imgDiv">
+        <img class="imgDivChild1" src="./Images/footer/karma.png" alt="karma">
+      </div>
+      <div class="addressNumEmail">
+        <p class="addNumEml-P">2307 Beverley Rd, New York</p>
+        <a class="addNumEml-A1" href="#">+ (0712) 819 79 555</a>
+        <a class="addNumEml-A2" href="#">office@finance.com</a>
+      </div>
+      <div class="social">
+        <a class="social-A1" href="#">
+          <img class="social-Img1" src="./Images/footer/insta.png" alt="insta">
+        </a>
+        <a class="social-A2" href="#">
+          <img class="social-Img2" src="./Images/footer/fb.png" alt="fb">
+        </a>
+        <a class="social-A3" href="#">
+          <img class="social-Img3" src="./Images/footer/twiter.png" alt="twt">
+        </a>
+        <a class="social-A4" href="#">
+          <img class="social-Img4" src="./Images/footer/youtube.png" alt="yt">
+        </a>
+      </div>
+    </div>
+    <div class="footer2">
+      <h5 class="footer2H5">Company</h5>
+      <ul class="footer2UL">
+        <li class="footer2ul-li1">
+          <a class="footer2ul-a1" href="#">
+            Mission
+          </a>
+        </li>
+        <li class="footer2ul-li2">
+          <a class="footer2ul-a2" href="#">
+            About Us
+          </a>
+        </li>
+        <li class="footer2ul-li3">
+          <a class="footer2ul-a3" href="#">
+            Why Choose Us
+          </a>
+        </li>
+        <li class="footer2ul-li4">
+          <a class="footer2ul-a4" href="#">
+            Team
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer3"> 
+      <h5 class="footer3H5">Services</h5>
+      <ul class="footer3UL">
+        <li class="footer3ul-li1">
+          <a class="footer3ul-a1" href="#">
+            Pricing
+          </a>
+        </li>
+        <li class="footer3ul-li2">
+          <a class="footer3ul-a2" href="#">
+            Awards
+          </a>
+        </li>
+        <li class="footer3ul-li3">
+          <a class="footer3ul-a3" href="#">
+            Services
+          </a>
+        </li>
+        <li class="footer3ul-li4">
+          <a class="footer3ul-a4" href="#">
+            Testimonials
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer4">
+      <h5 class="footer4H5">Resources</h5>
+      <ul class="footer4UL">
+        <li class="footer4ul-li1">
+          <a class="footer4ul-a1" href="#">
+            Contacts
+          </a>
+        </li>
+        <li class="footer4ul-li2">
+          <a class="footer4ul-a2" href="#">
+            Blog
+          </a>
+        </li>
+        <li class="footer4ul-li3">
+          <a class="footer4ul-a3" href="#">
+            F.A.Q.
+          </a>
+        </li>
+        <li class="footer4ul-li4">
+          <a class="footer4ul-a4" href="#">
+            Get a Quote
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer5">
+      <h5 class="footer5h5">
+        Subscribe
+      </h5>
+      <form class="footer5form" onsubmit="event.preventDefault()" action="" target="_blank" method="post">
+        <input class="footer5input" type="text" name="email" 
+          placeholder="Your email" required>
+        <button class="footer5submit" type="submit">
+          Get Started
+        </button>
+      </form>
+    </div>
+  </div> <!-- End of footer -->
+
+</body>
+</html>
